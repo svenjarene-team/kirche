@@ -1,164 +1,185 @@
 <!doctype html>
 <html lang="de" data-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/pico.min.css">
-    <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
-    <style>
-      :root:not([data-theme="light"]),
-      [data-theme="light"] {
-        --background-color: #fff;
-        color-scheme: light;
-      }
-      nav {
-        padding: 1rem 0;
-      }
-      .nav-wrapper {
-        background-color: var(--background-color);
-        border-bottom: 1px solid var(--muted-border-color);
-      }
-      .map-container {
-        margin: 2rem 0;
-        width: 100%;
-      }
-      .map-container iframe {
-        width: 100%;
-        max-width: 100%;
-        height: 450px;
-      }
-      .banner {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        margin-bottom: 2rem;
-      }
-      .banner-overlay {
-        position: relative;
-      }
-      .banner-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 2rem;
-        text-align: center;
-        border-radius: 4px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="nav-wrapper">
-      <nav class="container">
-        <ul>
-          <li><strong>Apostolische Gemeinde Gesundbrunnen</strong></li>
-        </ul>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="impressum.html">Impressum</a></li>
-        </ul>
-      </nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/pico.min.css">
+  <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
+  <style>
+    :root:not([data-theme="light"]),
+    [data-theme="light"] {
+      --background-color: #fff;
+      color-scheme: light;
+    }
+
+    nav {
+      padding: 1rem 0;
+    }
+
+    .nav-wrapper {
+      background-color: var(--background-color);
+      border-bottom: 1px solid var(--muted-border-color);
+    }
+
+    .map-container {
+      margin: 2rem 0;
+      width: 100%;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 450px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      margin-bottom: 2rem;
+    }
+
+    .banner-overlay {
+      position: relative;
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      text-align: center;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav-wrapper">
+    <nav class="container">
+      <ul>
+        <li><strong>Apostolische Gemeinde Gesundbrunnen</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="banner-overlay">
+    <img src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1200&h=800&fit=crop" alt="Kirchenbanner"
+      class="banner">
+    <div class="banner-text">
+      <h1>Apostolische Gemeinde Gesundbrunnen e.V.</h1>
+      <p>Willkommen in unserer Gemeinschaft</p>
     </div>
-    
-    <div class="banner-overlay">
-      <img src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1200&h=800&fit=crop" alt="Kirchenbanner" class="banner">
-      <div class="banner-text">
-        <h1>Apostolische Gemeinde Gesundbrunnen e.V.</h1>
-        <p>Willkommen in unserer Gemeinschaft</p>
+  </div>
+
+  <main class="container">
+    <article>
+      <h2>Unsere Gottesdienste</h2>
+      <p>Wir feiern unsere Gottesdienste an allen Sonntagen und an christlichen Feiertagen</p>
+      <p><strong>Ort:</strong> Paul Gerhardt Saal<br>
+        <strong>Zeit:</strong> 11:00 Uhr
+      </p>
+
+      <div class="address">
+        <h3>Anschrift</h3>
+        <p>
+          Paul-Gerhardt-Stift<br>
+          Müllerstraße 56-58<br>
+          13349 Berlin
+        </p>
       </div>
-    </div>
 
-    <main class="container">
-      <article>
-        <h2>Unsere Gottesdienste</h2>
-        <p>Wir feiern unsere Gottesdienste an allen Sonntagen und an christlichen Feiertagen</p>
-        <p><strong>Ort:</strong> Paul Gerhardt Saal<br>
-        <strong>Zeit:</strong> 11:00 Uhr</p>
-        
-        <div class="address">
-          <h3>Anschrift</h3>
-          <p>
-            Paul-Gerhardt-Stift<br>
-            Müllerstraße 56-58<br>
-            13349 Berlin
-          </p>
-        </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.859050179603!2d13.34362437724479!3d52.55407443370551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a853d75238e783%3A0x737334fdf411cd3f!2sPaul-Gerhardt-Stift!5e0!3m2!1sen!2sde!4v1732368062870!5m2!1sen!2sde"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </article>
 
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.859050179603!2d13.34362437724479!3d52.55407443370551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a853d75238e783%3A0x737334fdf411cd3f!2sPaul-Gerhardt-Stift!5e0!3m2!1sen!2sde!4v1732368062870!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </article>
+    <article>
+      <h2>Zusätzliche Angebote</h2>
+      <p>Wir laden ein:</p>
+      <p>Am 1. Sonntag des Monats nach dem Gottesdienst bleiben wir noch zu unserem Kirchenkaffee in gemütlicher Runde
+        zusammen.</p>
+      <p>Am 3. Sonntag des Monats nach dem Gottesdienst tauschen wir uns über biblische / geistliche Themen aus.</p>
+    </article>
 
-      <article>
-        <h2>Zusätzliche Angebote</h2>
-        <p>Wir laden ein:</p>
-        <p>Am 1. Sonntag des Monats nach dem Gottesdienst bleiben wir noch zu unserem Kirchenkaffee in gemütlicher Runde zusammen.</p>
-        <p>Am 3. Sonntag des Monats nach dem Gottesdienst tauschen wir uns über biblische / geistliche Themen aus.</p>
-      </article>
+    <article>
+      <h2>Was können wir (nicht) bieten?</h2>
 
-      <article>
-        <h2>Was können wir (nicht) bieten?</h2>
-        
-        <h3>Was können wir Ihnen bieten?</h3>
-        <ul>
-          <li>Einen Geist der Versöhnung, der in jeglicher menschlicher Beziehung die Basis für ein Miteinander bieten kann, ohne dass sich einer der Partner verleugnen oder kleinmachen muss.</li>
-          <li>Einen Sonntagvormittag, der in erfrischender Art und Weise über sich und die Welt nachdenken lässt und dabei ein Gefühl der Ruhe und des Friedens verspüren lässt.</li>
-          <li>Ein wachsendes Gefühl, dass man Entscheidungen im Leben nicht aus einem Gefühl der Angst und der Konformität treffen muss.</li>
-          <li>Ein Gefühl der Angenommenheit, ganz gleich wie man tickt.</li>
-          <li>Ein freies Kommen und Dabeisein und ein freies Gehen.</li>
-          <li>Eine neue, positive Sichtweise auf Ihr Leben und sich selbst, die sich durch Lebenserfahrungen bestätigen wird.</li>
-          <li>Ein zufriedenes Lebensgefühl, dass nicht immer an reibungslose Lebensumstände gebunden ist.</li>
-          <li>Seelsorgerische Gespräche, wenn sie von Ihnen gewünscht sind.</li>
-        </ul>
+      <h3>Was können wir Ihnen bieten?</h3>
+      <ul>
+        <li>Einen Geist der Versöhnung, der in jeglicher menschlicher Beziehung die Basis für ein Miteinander bieten
+          kann, ohne dass sich einer der Partner verleugnen oder kleinmachen muss.</li>
+        <li>Einen Sonntagvormittag, der in erfrischender Art und Weise über sich und die Welt nachdenken lässt und dabei
+          ein Gefühl der Ruhe und des Friedens verspüren lässt.</li>
+        <li>Ein wachsendes Gefühl, dass man Entscheidungen im Leben nicht aus einem Gefühl der Angst und der Konformität
+          treffen muss.</li>
+        <li>Ein Gefühl der Angenommenheit, ganz gleich wie man tickt.</li>
+        <li>Ein freies Kommen und Dabeisein und ein freies Gehen.</li>
+        <li>Eine neue, positive Sichtweise auf Ihr Leben und sich selbst, die sich durch Lebenserfahrungen bestätigen
+          wird.</li>
+        <li>Ein zufriedenes Lebensgefühl, dass nicht immer an reibungslose Lebensumstände gebunden ist.</li>
+        <li>Seelsorgerische Gespräche, wenn sie von Ihnen gewünscht sind.</li>
+      </ul>
 
-        <h3>Was können wir Ihnen nicht bieten?</h3>
-        <ul>
-          <li>Raum für zerstörende, menschenfeindliche, ausschließende Ideen, Rassismus, Fremdenfeindlichkeit.</li>
-          <li>Finanzielle Zuwendungen (wir bestreiten unsere Gemeindekosten selbst aus freiwilligen Spenden).</li>
-          <li>Die Übernahme für die Verantwortlichkeit Ihres Lebens und für sich selbst – wir beten keine Gurus an.</li>
-          <li>Den perfekten Mitmenschen.</li>
-        </ul>
-      </article>
+      <h3>Was können wir Ihnen nicht bieten?</h3>
+      <ul>
+        <li>Raum für zerstörende, menschenfeindliche, ausschließende Ideen, Rassismus, Fremdenfeindlichkeit.</li>
+        <li>Finanzielle Zuwendungen (wir bestreiten unsere Gemeindekosten selbst aus freiwilligen Spenden).</li>
+        <li>Die Übernahme für die Verantwortlichkeit Ihres Lebens und für sich selbst – wir beten keine Gurus an.</li>
+        <li>Den perfekten Mitmenschen.</li>
+      </ul>
+    </article>
 
-      <article>
-        <h2>Unsere Theologie</h2>
-        <p>Est ultricies integer quis auctor elit sed. Purus sit amet luctus venenatis lectus magna fringilla. Consequat semper viverra nam libero justo laoreet sit amet. Nec ultrices dui sapien eget mi proin sed libero enim. Neque egestas congue quisque egestas diam in. Risus commodo viverra maecenas accumsan.</p>
-      </article>
+    <article>
+      <h2>Unsere Theologie</h2>
+      <p>Est ultricies integer quis auctor elit sed. Purus sit amet luctus venenatis lectus magna fringilla. Consequat
+        semper viverra nam libero justo laoreet sit amet. Nec ultrices dui sapien eget mi proin sed libero enim. Neque
+        egestas congue quisque egestas diam in. Risus commodo viverra maecenas accumsan.</p>
+    </article>
 
 
 
 
-                
-            
-        
+
+
+
     <article class="contact-form">
       <h2>Kontakt</h2>
       <p>Haben Sie Fragen? Schreiben Sie uns gerne eine Nachricht.</p>
       <form action="https://airform.io/rainer.bischof@gmx.net" method="post">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-        
+
         <label for="email">E-Mail</label>
         <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
-        
+
         <label for="message">Nachricht</label>
         <textarea id="message" name="message" placeholder="Ihre Nachricht an uns" required rows="5"></textarea>
-        
+
         <button type="submit">Nachricht senden</button>
       </form>
     </article>
 
-                              
-                                        
-                                    
-                            
-                            
-                        
-                    
-                
-            
-        
-    </main>
-  </body>
+
+
+
+
+
+
+
+
+
+
+  </main>
+</body>
+
 </html>
