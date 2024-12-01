@@ -7,14 +7,27 @@
   <link rel="stylesheet" href="css/pico.min.css">
   <title>Impressum - Apostolische Gemeinde Gesundbrunnen e.V.</title>
   <style>
-    .nav-wrapper {
-      background-color: var(--background-color);
-      border-bottom: 1px solid var(--muted-border-color);
-    }
+nav {
+        background: var(--background-color);
+        padding: 1rem 0;
+        width: 100%;
+      }
 
-    nav {
-      padding: 1rem 0;
-    }
+      nav.wide-nav {
+        max-width: 1869px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      nav.wide-nav ul {
+        margin: 0;
+      }
+
+      @media (max-width: 992px) {
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+      }
 
     .map-container {
       margin: 2rem 0;
@@ -30,17 +43,16 @@
 </head>
 
 <body>
-  <div class="nav-wrapper">
-    <nav class="container">
-      <ul>
-        <li><strong>Apostolische Gemeinde Gesundbrunnen</strong></li>
-      </ul>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="wide-nav">
+    <ul>
+      <li><strong>Apostolische Gemeinde Gesundbrunnen</strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </nav>
+  
 
   <div style="padding: 2rem;">
     <div style="max-width: 1200px; margin: 0 auto;">
