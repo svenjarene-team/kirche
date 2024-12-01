@@ -55,6 +55,23 @@
         margin-bottom: 2rem;
       }
 
+ /* Neue Navigation Styles */
+nav {
+        background: var(--background-color);
+        padding: 1rem 0;
+        width: 100%;
+      }
+
+      nav.wide-nav {
+        max-width: 1869px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      nav.wide-nav ul {
+        margin: 0;
+      }
+
       @media (max-width: 992px) {
         .services-grid {
           grid-template-columns: 1fr;
@@ -63,7 +80,7 @@
     </style>
   </head>
   <body>
-    <nav class="container-fluid">
+    <nav class="wide-nav">
       <ul>
         <li><strong>Apostolische Gemeinde Gesundbrunnen</strong></li>
       </ul>
@@ -72,7 +89,6 @@
         <li><a href="impressum.html">Impressum</a></li>
       </ul>
     </nav>
-
     <div class="banner-overlay">
       <img src="./DSCF2686.JPG" alt="Kirchenbanner" class="banner">
       <img src="./Einladungskarte Gemeinde.jpg" alt="Einladungskarte" class="invitation-card">
@@ -81,7 +97,6 @@
         <p>Willkommen in unserer Gemeinschaft</p>
       </div>
     </div>
-
     <main class="wide-container">
       <div class="grid">
         <article>
@@ -89,10 +104,11 @@
             <h2>Unsere Gottesdienste</h2>
           </header>
           <p>Wir feiern unsere Gottesdienste an allen Sonntagen und an christlichen Feiertagen</p>
-          <p><strong>Ort:</strong> Paul Gerhardt Saal</p>
-          <p><strong>Zeit:</strong> 11:00 Uhr</p>
+          <p><strong>Ort:</strong>
+            Paul Gerhardt Saal</p>
+          <p><strong>Zeit:</strong>
+            11:00 Uhr</p>
         </article>
-
         <article>
           <header>
             <h2>Zusätzliche Angebote</h2>
@@ -102,7 +118,6 @@
           <p>Am 3. Sonntag des Monats nach dem Gottesdienst tauschen wir uns über biblische / geistliche Themen aus.</p>
         </article>
       </div>
-
       <div class="services-grid">
         <article>
           <header>
@@ -117,7 +132,6 @@
           <p>Ein zufriedenes Lebensgefühl, dass nicht immer an reibungslose Lebensumstände gebunden ist.</p>
           <p>Seelsorgerische Gespräche, wenn sie von Ihnen gewünscht sind.</p>
         </article>
-
         <article>
           <header>
             <h2>Was können wir Ihnen nicht bieten?</h2>
@@ -128,7 +142,6 @@
           <p>Den perfekten Mitmenschen.</p>
         </article>
       </div>
-
       <div class="grid">
         <article>
           <header>
@@ -137,7 +150,6 @@
           <p>Text folgt...</p>
         </article>
       </div>
-
       <article>
         <header>
           <h2>Kontakt</h2>
