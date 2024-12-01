@@ -1,65 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
+    <style>
+      .banner {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        margin-bottom: 2rem;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/pico.min.css">
-  <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
-  <style>
-    :root:not([data-theme="light"]),
-    [data-theme="light"] {
-      --background-color: #fff;
-      color-scheme: light;
-    }
+      .banner-overlay {
+        position: relative;
+        max-width: 1805px;
+        margin: 0 auto;
+      }
 
-    nav {
-      padding: 1rem 0;
-    }
+      .banner-text {
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 2rem;
+        text-align: center;
+        border-radius: 4px;
+      }
 
-    .nav-wrapper {
-      background-color: var(--background-color);
-      border-bottom: 1px solid var(--muted-border-color);
-    }
+      .invitation-card {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 400px;
+        height: auto;
+        z-index: 2;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
 
-    .map-container {
-      margin: 2rem 0;
-      width: 100%;
-    }
+      /* Neue Styles für das Layout */
+      .wide-container {
+        max-width: 1845px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
 
-    .map-container iframe {
-      width: 100%;
-      max-width: 100%;
-      height: 450px;
-    }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
 
-    .banner {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      margin-bottom: 2rem;
-    }
-
-    .banner-overlay {
-      position: relative;
-    }
-
-    .banner-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 2rem;
-      text-align: center;
-      border-radius: 4px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="nav-wrapper">
-    <nav class="container">
+      @media (max-width: 992px) {
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
       <ul>
         <li><strong>Apostolische Gemeinde Gesundbrunnen</strong></li>
       </ul>
@@ -68,41 +72,42 @@
         <li><a href="impressum.html">Impressum</a></li>
       </ul>
     </nav>
-  </div>
 
-  <div class="banner-overlay">
-    <img src="./DSCF2686.JPG" alt="Kirchenbanner" class="banner">
-    <img src="./Einladungskarte Gemeinde.jpg" alt="Einladungskarte" style="position: absolute; top: 20px; right: 20px; width: 400px; height: auto; z-index: 2; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <div class="banner-text" style="position: absolute; top: 67%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255, 255, 255, 0.7); padding: 2rem; text-align: center; border-radius: 4px;">
+    <div class="banner-overlay">
+      <img src="./DSCF2686.JPG" alt="Kirchenbanner" class="banner">
+      <img src="./Einladungskarte Gemeinde.jpg" alt="Einladungskarte" class="invitation-card">
+      <div class="banner-text">
         <h1>Apostolische Gemeinde Berlin Gesundbrunnen e.V.</h1>
         <p>Willkommen in unserer Gemeinschaft</p>
+      </div>
     </div>
-</div>
 
-<div style="padding: 2rem;">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-      
-      <!-- Unsere Gottesdienste -->
-      <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; height: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-          <h2 style="color: #2c3e50; margin-bottom: 1.5rem; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem;">Unsere Gottesdienste</h2>
+    <main class="wide-container">
+      <div class="grid">
+        <article>
+          <header>
+            <h2>Unsere Gottesdienste</h2>
+          </header>
           <p>Wir feiern unsere Gottesdienste an allen Sonntagen und an christlichen Feiertagen</p>
           <p><strong>Ort:</strong> Paul Gerhardt Saal</p>
           <p><strong>Zeit:</strong> 11:00 Uhr</p>
-      </div>
+        </article>
 
-      <!-- Zusätzliche Angebote -->
-      <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; height: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-          <h2 style="color: #2c3e50; margin-bottom: 1.5rem; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem;">Zusätzliche Angebote</h2>
+        <article>
+          <header>
+            <h2>Zusätzliche Angebote</h2>
+          </header>
           <p>Wir laden ein:</p>
           <p>Am 1. Sonntag des Monats nach dem Gottesdienst bleiben wir noch zu unserem Kirchenkaffee in gemütlicher Runde zusammen.</p>
           <p>Am 3. Sonntag des Monats nach dem Gottesdienst tauschen wir uns über biblische / geistliche Themen aus.</p>
+        </article>
       </div>
 
-      <!-- Was können wir (nicht) bieten? -->
-      <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; height: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-          <h2 style="color: #2c3e50; margin-bottom: 1.5rem; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem;">Was können wir (nicht) bieten?</h2>
-          
-          <h3 style="color: #34495e; margin-top: 1rem;">Was können wir Ihnen bieten?</h3>
+      <div class="services-grid">
+        <article>
+          <header>
+            <h2>Was können wir Ihnen bieten?</h2>
+          </header>
           <p>Einen Geist der Versöhnung, der in jeglicher menschlicher Beziehung die Basis für ein Miteinander bieten kann, ohne dass sich einer der Partner verleugnen oder kleinmachen muss.</p>
           <p>Einen Sonntagvormittag, der in erfrischender Art und Weise über sich und die Welt nachdenken lässt und dabei ein Gefühl der Ruhe und des Friedens verspüren lässt.</p>
           <p>Ein wachsendes Gefühl, dass man Entscheidungen im Leben nicht aus einem Gefühl der Angst und der Konformität treffen muss.</p>
@@ -111,53 +116,51 @@
           <p>Eine neue, positive Sichtweise auf Ihr Leben und sich selbst, die sich durch Lebenserfahrungen bestätigen wird.</p>
           <p>Ein zufriedenes Lebensgefühl, dass nicht immer an reibungslose Lebensumstände gebunden ist.</p>
           <p>Seelsorgerische Gespräche, wenn sie von Ihnen gewünscht sind.</p>
-          
-          <h3 style="color: #34495e; margin-top: 2rem;">Was können wir Ihnen nicht bieten?</h3>
+        </article>
+
+        <article>
+          <header>
+            <h2>Was können wir Ihnen nicht bieten?</h2>
+          </header>
           <p>Raum für zerstörende, menschenfeindliche, ausschließende Ideen, Rassismus, Fremdenfeindlichkeit.</p>
           <p>Finanzielle Zuwendungen (wir bestreiten unsere Gemeindekosten selbst aus freiwilligen Spenden).</p>
           <p>Die Übernahme für die Verantwortlichkeit Ihres Lebens und für sich selbst – wir beten keine Gurus an.</p>
           <p>Den perfekten Mitmenschen.</p>
+        </article>
       </div>
 
-      <!-- Unsere Theologie -->
-      <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; height: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-          <h2 style="color: #2c3e50; margin-bottom: 1.5rem; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem;">Unsere Theologie</h2>
+      <div class="grid">
+        <article>
+          <header>
+            <h2>Unsere Theologie</h2>
+          </header>
           <p>Text folgt...</p>
+        </article>
       </div>
-      
-  </div>
-</div>
 
-<!-- Kontaktformular -->
-<div style="padding: 2rem;">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-    <!-- Das Kontaktformular nimmt jetzt die volle Breite des Grids ein -->
-    <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); grid-column: 1 / -1;">
-      <h2 style="color: #2c3e50; margin-bottom: 1.5rem; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem;">Kontakt</h2>
-      <p>Haben Sie Fragen? Schreiben Sie uns gerne eine Nachricht.</p>
-      
-      <form action="https://airform.io/" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
-        <div style="margin-bottom: 1rem;">
-          <label for="name" style="display: block; margin-bottom: 0.5rem;">Name</label>
-          <input type="text" id="name" name="name" placeholder="Ihr Name" required style="width: 100%; padding: 0.5rem;">
-        </div>
-        
-        <div style="margin-bottom: 1rem;">
-          <label for="email" style="display: block; margin-bottom: 0.5rem;">E-Mail</label>
-          <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required style="width: 100%; padding: 0.5rem;">
-        </div>
-        
-        <div style="margin-bottom: 1rem;">
-          <label for="message" style="display: block; margin-bottom: 0.5rem;">Nachricht</label>
-          <textarea id="message" name="message" placeholder="Ihre Nachricht an uns" required rows="5" style="width: 100%; padding: 0.5rem;"></textarea>
-        </div>
-        
-        <button type="submit" style="padding: 0.75rem 1.5rem; background-color: #0e71d4; color: white; border: none; border-radius: 4px; cursor: pointer;">Nachricht senden</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-</body>
-
+      <article>
+        <header>
+          <h2>Kontakt</h2>
+          <p>Haben Sie Fragen? Schreiben Sie uns gerne eine Nachricht.</p>
+        </header>
+        <form action="https://airform.io/" method="post">
+          <div class="grid">
+            <label for="name">
+              Name
+              <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            </label>
+            <label for="email">
+              E-Mail
+              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+            </label>
+          </div>
+          <label for="message">
+            Nachricht
+            <textarea id="message" name="message" placeholder="Ihre Nachricht an uns" required></textarea>
+          </label>
+          <button type="submit">Nachricht senden</button>
+        </form>
+      </article>
+    </main>
+  </body>
 </html>
