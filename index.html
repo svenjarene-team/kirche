@@ -7,18 +7,34 @@
     <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
     <style>
 
-.banner-text-top {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  transform: rotate(-5deg);
-  font-family: "Bradley Hand ITC", cursive;
-  font-size: 1.5rem;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 1rem;
-  border-radius: 4px;
+
+@font-face {
+    font-family: 'Bradley Hand ITC';
+    src: url('fonts/BRADHITC.TTF') format('truetype');
 }
+
+.banner-text h1 {
+    font-family: 'Bradley Hand ITC', cursive;
+}
+
+.banner-text-top {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(-5deg);
+    font-family: 'Bradley Hand ITC', cursive;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
 
 .banner-text {
   position: absolute;
@@ -88,14 +104,11 @@ nav.container-fluid {
     
     <div class="banner-overlay">
       <img src="./DSCF2686.JPG" alt="Kirchenbanner" class="banner">
-      <div class="banner-text-top">
-        <p>Es ist noch Platz am Tisch Gottes</p>
-      </div>
+      <div class="banner-text-top">Es ist noch Platz am Tisch Gottes</div>
       <div class="banner-text">
-        <h1>Herzlich Willkommen in unserer Gemeinschaft</h1>
+          <h1>Herzlich Willkommen in unserer Gemeinschaft</h1>
       </div>
-    </div>
-
+  </div>
     
     <main class="container">
       <div class="grid">
