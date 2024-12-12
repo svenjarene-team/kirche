@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Interner Bereich - Apostolische Gemeinde Gesundbrunnen</title>
+    <style>
+        nav.container-fluid {
+            position: relative;
+            z-index: 1000;
+            background: white;
+        }
+
+        #login-area {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 1px solid var(--form-element-border-color);
+            border-radius: var(--border-radius);
+        }
+
+        #protected-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="container-fluid">
+        <ul>
+            <li>
+                <a href="index.html" class="contrast">
+                    <img src="Signet.JPG" alt="Logo" style="width: 50px; height: 50px; margin-right: 1rem;">
+                    <strong>Apostolische Gemeinde Gesundbrunnen</strong>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="wer-wir-sind.html">Wer wir sind</a></li>
+            <li><a href="woran-wir-glauben.html">Woran wir glauben</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum/Datenschutz</a></li>
+            <li><a href="intern.html">Intern</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main class="container">
+        <h1>Interner Bereich</h1>
+
+        <!-- Login-Bereich -->
+        <div id="login-area">
+            <article>
+                <header>
+                    <h2>Anmeldung</h2>
+                    <p>Dieser Bereich ist nur für Mitglieder zugänglich.</p>
+                </header>
+                <form id="login-form">
+                    <label for="password">
+                        Passwort
+                        <input type="password" id="password" name="password" placeholder="Bitte Passwort eingeben" required>
+                    </label>
+                    <button type="submit">Anmelden</button>
+                </form>
+            </article>
+        </div>
+
+        <!-- Geschützter Inhalt -->
+        <div id="protected-content">
+            <article>
+                <header>
+                    <h2>Interne Informationen</h2>
+                </header>
+                <div class="grid">
+                    <div>
+                        <h3>Termine</h3>
+                        <ul>
+                            <li>Gemeindeversammlungen</li>
+                            <li>Arbeitskreise</li>
+                            <li>Besondere Veranstaltungen</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Dokumente</h3>
+                        <ul>
+                            <li>Protokolle</li>
+                            <li>Rundschreiben</li>
+                            <li>Gemeindeinfos</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- JavaScript für Passwortschutz -->
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            // Hier sollte das Passwort mit einem sicheren Verfahren überprüft werden
+            // Dies ist nur ein einfaches Beispiel
+            if (password === 'IhrPasswort') {
+                document.getElementById('login-area').style.display = 'none';
+                document.getElementById('protected-content').style.display = 'block';
+            } else {
+                alert('Falsches Passwort');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -6,40 +6,42 @@
     <link rel="stylesheet" href="css/pico.min.css">
     <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
     <style>
-      .banner {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        margin-bottom: 2rem;
-      }
 
-      .banner-overlay {
-        position: relative;
-        max-width: 1805px;
-        margin: 0 auto;
-      }
+.banner-text-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: rotate(-5deg);
+  font-family: "Bradley Hand ITC", cursive;
+  font-size: 1.5rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 4px;
+}
 
-      .banner-text {
-        position: absolute;
-        top: 67%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 2rem;
-        text-align: center;
-        border-radius: 4px;
-      }
+.banner-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  font-family: "Bradley Hand ITC", cursive;
+}
 
-      .invitation-card {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 400px;
-        height: auto;
-        z-index: 2;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      }
+nav.container-fluid {
+  position: relative;
+  z-index: 1000; /* Stellt sicher, dass die Navigation über allem anderen liegt */
+  background: white; /* oder die gewünschte Hintergrundfarbe */
+}
+
+.banner-overlay {
+  position: relative;
+  z-index: 1; /* Niedrigerer z-index als die Navigation */
+}
 
       /* Neue Styles für das Layout */
       .wide-container {
@@ -55,22 +57,6 @@
         margin-bottom: 2rem;
       }
 
- /* Neue Navigation Styles */
-nav {
-        background: var(--background-color);
-        padding: 1rem 0;
-        width: 100%;
-      }
-
-      nav.wide-nav {
-        max-width: 1869px;
-        margin: 0 auto;
-        padding: 1rem;
-      }
-
-      nav.wide-nav ul {
-        margin: 0;
-      }
 
       @media (max-width: 992px) {
         .services-grid {
@@ -80,26 +66,38 @@ nav {
     </style>
   </head>
   <body>
-    <nav class="wide-nav">
+    <nav class="container-fluid">
       <ul>
-        <li><strong>Apostolische Gemeinde Gesundbrunnen</strong></li>
+        <li>
+          <a href="index.html" class="contrast">
+            <img src="Signet.JPG" alt="Logo" style="width: 50px; height: 50px; margin-right: 1rem;">
+            <strong>Apostolische Gemeinde Gesundbrunnen</strong>
+          </a>
+        </li>
       </ul>
       <ul>
+        <li><a href="wer-wir-sind.html">Wer wir sind</a></li>
+        <li><a href="woran-wir-glauben.html">Woran wir glauben</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum/Datenschutz</a></li>
+        <li><a href="intern.html">Intern</a></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
       </ul>
     </nav>
 
     
     <div class="banner-overlay">
       <img src="./DSCF2686.JPG" alt="Kirchenbanner" class="banner">
-      <img src="./Einladungskarte Gemeinde.jpg" alt="Einladungskarte" class="invitation-card">
+      <div class="banner-text-top">
+        <p>Es ist noch Platz am Tisch Gottes</p>
+      </div>
       <div class="banner-text">
-        <h1>Apostolische Gemeinde Berlin Gesundbrunnen e.V.</h1>
-        <p>Willkommen in unserer Gemeinschaft</p>
+        <h1>Herzlich Willkommen in unserer Gemeinschaft</h1>
       </div>
     </div>
-    <main class="wide-container">
+
+    
+    <main class="container">
       <div class="grid">
         <article>
           <header>
@@ -114,70 +112,17 @@ nav {
           <p><strong>Zeit:</strong>
             11:00 Uhr</p>
         </article>
+    
         <article>
           <header>
-            <h2>Zusätzliche Angebote</h2>
+            <h2>Aktuelles</h2>
           </header>
-          <p>Wir laden ein:</p>
-          <p>Am 1. Sonntag des Monats nach dem Gottesdienst bleiben wir noch zu unserem Kirchenkaffee in gemütlicher Runde zusammen.</p>
-          <p>Am 3. Sonntag des Monats nach dem Gottesdienst tauschen wir uns über biblische / geistliche Themen aus.</p>
+          <!-- Hier können aktuelle Ankündigungen eingefügt werden -->
         </article>
       </div>
-      <div class="services-grid">
-        <article>
-          <header>
-            <h2>Was können wir Ihnen bieten?</h2>
-          </header>
-          <p>Einen Geist der Versöhnung, der in jeglicher menschlicher Beziehung die Basis für ein Miteinander bieten kann, ohne dass sich einer der Partner verleugnen oder kleinmachen muss.</p>
-          <p>Einen Sonntagvormittag, der in erfrischender Art und Weise über sich und die Welt nachdenken lässt und dabei ein Gefühl der Ruhe und des Friedens verspüren lässt.</p>
-          <p>Ein wachsendes Gefühl, dass man Entscheidungen im Leben nicht aus einem Gefühl der Angst und der Konformität treffen muss.</p>
-          <p>Ein Gefühl der Angenommenheit, ganz gleich wie man tickt.</p>
-          <p>Ein freies Kommen und Dabeisein und ein freies Gehen.</p>
-          <p>Eine neue, positive Sichtweise auf Ihr Leben und sich selbst, die sich durch Lebenserfahrungen bestätigen wird.</p>
-          <p>Ein zufriedenes Lebensgefühl, dass nicht immer an reibungslose Lebensumstände gebunden ist.</p>
-          <p>Seelsorgerische Gespräche, wenn sie von Ihnen gewünscht sind.</p>
-        </article>
-        <article>
-          <header>
-            <h2>Was können wir Ihnen nicht bieten?</h2>
-          </header>
-          <p>Raum für zerstörende, menschenfeindliche, ausschließende Ideen, Rassismus, Fremdenfeindlichkeit.</p>
-          <p>Finanzielle Zuwendungen (wir bestreiten unsere Gemeindekosten selbst aus freiwilligen Spenden).</p>
-          <p>Die Übernahme für die Verantwortlichkeit Ihres Lebens und für sich selbst – wir beten keine Gurus an.</p>
-          <p>Den perfekten Mitmenschen.</p>
-        </article>
-      </div>
-      <div class="grid">
-        <article>
-          <header>
-            <h2>Unsere Theologie</h2>
-          </header>
-          <p>In unserer Apostolischen Gemeinde Gesundbrunnen erleben wir Glauben in einer warmherzigen, persönlichen Atmosphäre. Die familiäre Größe unserer Gemeinschaft ermöglicht es, dass wir uns alle kennen und mit aufrichtiger Herzlichkeit begegnen. Unsere Gottesdienste leben von der aktiven Beteiligung aller – hier zählt jede Stimme und jeder Gedanke ist wertvoll. Das gemeinsame Verweilen nach den Gottesdiensten bei Gesprächen stärkt unsere Verbundenheit. In dieser Atmosphäre der Hilfsbereitschaft und Offenheit für neue Ideen wächst eine lebendige Gemeinschaft, in der sich jeder Besucher von Anfang an willkommen und aufgehoben fühlt.</p>
-        </article>
-      </div>
-      <article>
-        <header>
-          <h2>Kontakt</h2>
-          <p>Haben Sie Fragen? Schreiben Sie uns gerne eine Nachricht.</p>
-        </header>
-        <form action="https://airform.io/" method="post">
-          <div class="grid">
-            <label for="name">
-              Name
-              <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-            </label>
-            <label for="email">
-              E-Mail
-              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
-            </label>
-          </div>
-          <label for="message">
-            Nachricht
-            <textarea id="message" name="message" placeholder="Ihre Nachricht an uns" required></textarea>
-          </label>
-          <button type="submit">Nachricht senden</button>
-        </form>
-      </article>
     </main>
+
+
+
   </body>
 </html>
