@@ -4,66 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
-    <style>
-
-.banner-text-top {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  transform: rotate(-5deg);
-  font-family: "Bradley Hand ITC", cursive;
-  font-size: 1.5rem;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-.banner-text {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 2rem;
-  text-align: center;
-  border-radius: 4px;
-  font-family: "Bradley Hand ITC", cursive;
-}
-
-nav.container-fluid {
-  position: relative;
-  z-index: 1000; /* Stellt sicher, dass die Navigation über allem anderen liegt */
-  background: white; /* oder die gewünschte Hintergrundfarbe */
-}
-
-.banner-overlay {
-  position: relative;
-  z-index: 1; /* Niedrigerer z-index als die Navigation */
-}
-
-      /* Neue Styles für das Layout */
-      .wide-container {
-        max-width: 1845px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-
-      .services-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        margin-bottom: 2rem;
-      }
-
-
-      @media (max-width: 992px) {
-        .services-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    
   </head>
   <body>
     <nav class="container-fluid">
@@ -80,12 +23,9 @@ nav.container-fluid {
         <li><a href="woran-wir-glauben.html">Woran wir glauben</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="impressum.html">Impressum/Datenschutz</a></li>
-        <li><a href="intern.html">Intern</a></li>
         <li><a href="index.html">Home</a></li>
       </ul>
     </nav>
-
-    
     <div class="banner-overlay">
       <img src="./DSCF2686.JPG" alt="Kirchenbanner" class="banner">
       <div class="banner-text-top">
@@ -95,8 +35,6 @@ nav.container-fluid {
         <h1>Herzlich Willkommen in unserer Gemeinschaft</h1>
       </div>
     </div>
-
-    
     <main class="container">
       <div class="grid">
         <article>
@@ -105,24 +43,26 @@ nav.container-fluid {
           </header>
           <p>Wir feiern unsere Gottesdienste an allen Sonntagen und an christlichen Feiertagen</p>
           <p><strong>Ort:</strong>
-          <br>
-          Paul-Gerhardt-Stift<br>
-          Müllerstraße 56-58<br>
-          13349 Berlin</p>
+            <br>
+            Paul-Gerhardt-Stift<br>
+            Müllerstraße 56-58<br>
+            13349 Berlin</p>
           <p><strong>Zeit:</strong>
             11:00 Uhr</p>
         </article>
-    
         <article>
           <header>
             <h2>Aktuelles</h2>
           </header>
-          <!-- Hier können aktuelle Ankündigungen eingefügt werden -->
+          <div class="aktuelles">
+            <article>
+              <p><strong>Kommende Veranstaltungen</strong></p>
+              <p>Am 1. Sonntag des Monats nach dem Gottesdienst: Kirchenkaffee</p>
+              <p>Am 3. Sonntag des Monats nach dem Gottesdienst: Austausch über biblische / geistliche Themen</p>
+            </article>
+          </div>
         </article>
       </div>
     </main>
-
-
-
   </body>
 </html>
