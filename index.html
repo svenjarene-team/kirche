@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Mastodon Timeline CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.4.2/dist/mastodon-timeline.min.css" integrity="sha256-1UGgxsonaMCfOEnVOL89aMKSo3GEAmaRP0ISbsWa6lU=" crossorigin="anonymous">
+    <style>
+      .mt-container {
+     max-height: none !important;
+     overflow: visible !important;
+   }
+   .mt-body {
+     overflow: visible !important;
+   }
+    </style>
     <title>Apostolische Gemeinde Gesundbrunnen e.V.</title>
-
   </head>
   <body>
     <nav class="container-fluid">
@@ -27,13 +37,12 @@
       </ul>
     </nav>
     <div class="banner-overlay">
-      <img src="./DSCF2686.JPG" alt="Kirchenbanner" class="banner">
+      <img src="./WEB-Version Foto neu.JPG" alt="Kirchenbanner" class="banner" style="width: 80%; height: auto; margin: 0 auto; display: block;">
       <div class="banner-text-top">Es ist noch Platz am Tisch Gottes</div>
       <div class="banner-text">
-          <h1>Herzlich Willkommen in unserer Gemeinschaft</h1>
+        <h1>Herzlich Willkommen in unserer Gemeinschaft</h1>
       </div>
     </div>
-
     <main class="container">
       <div class="grid">
         <article>
@@ -61,8 +70,41 @@
             </article>
           </div>
         </article>
-
       </div>
+      <article>
+        <header>
+          <h2>Aktuelle Mitteilungen</h2>
+        </header>
+        <div class="mt-container" id="mt-container">
+          <div class="mt-body" role="feed">
+            <div class="mt-loading-spinner"></div>
+          </div>
+        </div>
+        <!-- Mastodon Timeline JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.4.2/dist/mastodon-timeline.umd.js" integrity="sha256-E6WPG6iq+qQIzvu3HPJJxoAeRdum5siq13x4ITjyxu8=" crossorigin="anonymous"></script>
+        <script>
+          window.addEventListener("load", () => {
+            const myTimeline = new MastodonTimeline.Init({
+              instanceUrl: "https://mastodon.social",
+              timelineType: "profile",
+              userId: "113656933712355971",
+              profileName: "@ApostolischGesundbrunnen",
+              defaultTheme: "light",
+              dateLocale: "de-DE",
+              dateOptions: {
+                day: "2-digit",
+                month: "long",
+                year: "numeric"
+              },
+              maxNbPostShow: "5",
+              hideCounterBar: true,
+              btnSeeMore: "",
+              btnReload: "",
+              hideUserAccount: true
+            });
+          });
+        </script>
+      </article>
     </main>
   </body>
 </html>
