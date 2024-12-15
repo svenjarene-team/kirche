@@ -1,16 +1,51 @@
-/* Common styles for all pages */
-nav.container-fluid {
+/* Import fonts - Note: You'll need to ensure these fonts are available */
+@font-face {
+    font-family: 'Verdana';
+    src: local('Verdana');
+  }
+  
+  @font-face {
+    font-family: 'Calibri';
+    src: local('Calibri');
+  }
+  
+  @font-face {
+    font-family: 'Bradley Hand ITC';
+    src: local('Bradley Hand ITC');
+  }
+  
+  /* Base styles */
+  body {
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Navigation styles */
+  nav.container-fluid {
     position: relative;
     z-index: 1000;
     background: white;
-}
-
-.banner-overlay {
+    font-family: Verdana, Arial, sans-serif;
+  }
+  
+  nav.container-fluid ul li a,
+  nav.container-fluid ul li a strong {
+    color: #921f16;
+    text-decoration: none;
+  }
+  
+  nav.container-fluid ul li a:hover {
+    color: #6b170f;
+  }
+  
+  /* Banner styles */
+  .banner-overlay {
     position: relative;
     z-index: 1;
-}
-
-.banner-text-top {
+  }
+  
+  .banner-text-top {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -21,101 +56,95 @@ nav.container-fluid {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 1rem;
     border-radius: 4px;
-}
-
-.banner-text {
-    width: 100%;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-size: 2.5rem;
-
-}
-
-
-/* .banner-text h1 {
-    font-family: "Bradley Hand ITC";
-    margin: 0;
-    font-size: 2.5rem;
-    color: white;
-*/
-
-
-
-/* Style all h2 headers */
-h2 {
+  }
+  
+  .banner-text h1 {
     font-family: "Bradley Hand ITC", cursive;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    font-family: Calibri, Arial, sans-serif;
     color: #921f16;
-}
-
-/* Style all h3 headers */
-h3 {
-    font-family: "Bradley Hand ITC", cursive;
-    color: #921f16;
-}
-/* Style article headers */
-article header {
-    font-family: "Bradley Hand ITC", cursive;
-}
-
-/* Style navigation text */
-nav.container-fluid ul li a,
-nav.container-fluid ul li a strong {
-    color: #921f16;
-    text-decoration: none;
-}
-
-/* Add hover effect */
-nav.container-fluid ul li a:hover {
-    color: #6b170f;
-}
-
-/* Add to style.css */
-@media (max-width: 768px) {
-    /* Hide banner-text-top on mobile */
+  }
+  
+  /* Content sections */
+  article {
+    margin-bottom: 2rem;
+  }
+  
+  article header {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Lists */
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
     .banner-text-top {
-        display: none;
+      display: none;
     }
-
+  
     nav.container-fluid {
-        padding: 1rem;
+      padding: 1rem;
     }
-
+  
     nav.container-fluid ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin: 0;
     }
-
+  
     nav.container-fluid ul:first-child {
-        margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
-
+  
     nav.container-fluid ul li {
-        width: 100%;
-        text-align: center;
-        padding: 0.5rem 0;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
     }
-
+  
     nav.container-fluid ul li a {
-        display: block;
-        width: 100%;
+      display: block;
+      width: 100%;
     }
-
+  
     nav.container-fluid ul li a img {
-        margin: 0 auto 0.5rem auto;
-        display: block;
+      margin: 0 auto 0.5rem auto;
+      display: block;
     }
-
+  
     nav.container-fluid ul li a strong {
-        display: block;
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
     }
-}* Add missing banner image styles */
-.banner {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+  }
+  
+  /* Additional utility classes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Mastodon Timeline customization */
+  .mt-container {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  .mt-body {
+    overflow: visible !important;
+  }
