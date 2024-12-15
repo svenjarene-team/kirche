@@ -28,7 +28,6 @@ nav.container-fluid {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
     padding: 2rem;
     text-align: center;
     border-radius: 4px;
@@ -36,9 +35,11 @@ nav.container-fluid {
 }
 
 .banner-text h1 {
-    font-family: "Bradley Hand ITC", cursive;
+    font-family: "Bradley Hand ITC";
     margin: 0;
     font-size: 2.5rem;
+    /* color white */
+    color: #fff;
 }/* Add these to your style.css */
 
 /* Style all h2 headers */
@@ -71,6 +72,11 @@ nav.container-fluid ul li a:hover {
 
 /* Add to style.css */
 @media (max-width: 768px) {
+    /* Hide banner-text-top on mobile */
+    .banner-text-top {
+        display: none;
+    }
+
     nav.container-fluid {
         padding: 1rem;
     }
